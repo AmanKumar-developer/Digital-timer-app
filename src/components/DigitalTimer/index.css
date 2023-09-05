@@ -1,0 +1,124 @@
+/* Write your CSS here */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #ffffff, #cffcf1, #defafe);
+  background-size: cover;
+  height: 100vh;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 34px;
+}
+.digital-timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.timer-display-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+.elapsed-time-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.element-time {
+  color: #00d9f5;
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0px;
+}
+.timer-state {
+  color: #1e293b;
+  font-family: 'Roboto';
+}
+.control-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.timer-controller-container {
+  display: flex;
+  align-items: center;
+}
+.timer-controller-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  margin-right: 16px;
+  cursor: pointer;
+  outline: none;
+}
+.timer-controller-icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+.timer-controller-label {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+}
+.timer-limit-controller-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.limit-label {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 17px;
+  color: #1e293b;
+}
+.timer-limit-controller {
+  display: flex;
+  align-items: center;
+}
+.limit-controller-button {
+  color: #1e293b;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.limit-label-and-value-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: none;
+}
+.limit-value {
+  text-align: center;
+  color: #1e293b;
+  background-image: linear-gradient(to right, #00f5a0, #00d9f5);
+  font-family: 'Roboto';
+  width: 100px;
+  padding: 9px;
+  border-radius: 8px;
+  font-size: 32px;
+}
