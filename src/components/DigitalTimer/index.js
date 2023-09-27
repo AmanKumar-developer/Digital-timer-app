@@ -31,8 +31,7 @@ class DigitalTimer extends Component {
     this.setState(prevState => ({
       timeLimitInMinutes: prevState.timeLimitInMinutes + 1,
     }))
-
-    // eslint-disable-next-line no-undef
+  }
     renderTimerLimitController = () => {
       const {timeLimitInMinutes, timerElapsedInSeconds} = this.state
       const isButtonDisabled = timerElapsedInSeconds > 0
@@ -64,7 +63,7 @@ class DigitalTimer extends Component {
         </div>
       )
     }
-  }
+  
 
   onResetTimer = () => {
     this.clearTimerInterval()
@@ -148,8 +147,8 @@ class DigitalTimer extends Component {
       timerLimitInMinutes * 60 - timeElapsedInSeconds
     const minutes = Math.floor(totalRemainingSeconds / 60)
     const seconds = Math.floor(totalRemainingSeconds % 60)
-    const stringifiedMinutes = minutes > 9 ? minutes : $0{minutes}
-    const stringifiedSeconds = seconds > 9 ? seconds : $0{seconds}
+    const stringifiedMinutes = minutes > 9 ? minutes : `0${minutes}`
+    const stringifiedSeconds = seconds > 9 ? seconds : `0${seconds}`
 
     return `${stringifiedMinutes}: ${stringifiedSeconds}`
   }
